@@ -1,0 +1,246 @@
+Tiberian Sun Patch
+Version 2.03
+May 31, 2000
+
+Changes in V. 2.03
+------------------
+-  Fixed bug that could have a negative impact on game 
+   performance at the beginning of a multiplayer game.
+
+-  Fixed bug that could cause the game to lock up if a player 
+   sold their last building after surrendering.
+
+-  Fixed bug that allowed cheating players to lock their opponent's
+   harvesters out of their own refineries.
+     
+-  Mammoth Mk II hit points changed from 800 to 1200.
+     
+-  Fixed a condition where a multiplayer disconnect would 
+   occasionally fail to be reported.
+
+Changes in V. 2.02
+------------------
+-  Out of sync between Tiberian Sun and Firestorm in Tiberian
+   Sun mode is fixed.
+
+-  Technicians being incorrectly substituted for engineers in 
+   various circumstances in non-English Firestorm is fixed.
+
+-  World Domination Tour map settings don't get changed with
+   "Surprise Me".
+
+Changes in V. 2.0
+-----------------
+-  Skirmish games may now be saved.
+
+-  Ability to select all units of a type or types on screen that
+   are currently selected.  Functionality must be assigned to a key
+   manually in 'Options - Keyboard' menu under 'Selection Category 
+   - Select Same Type'.
+
+-  New main menu allows faster access to different game types
+   (except in the Spanish version).
+
+-  Location and server selection integrated into Westwood
+   Online login dialog.
+
+-  User locations are displayed in the Westwood Online user
+   list tooltips.
+
+-  Full games are greyed out in the Westwood Online games 
+   list.
+
+-  Battleclan and Firestorm ladders are now browsable in the
+   Westwood Online ladder screen.
+
+-  Host location filter added to Westwood Online find game
+   screen.   
+
+Changes in V. 1.17a
+-------------------
+
+-  Fixed bug where buildings could be built in arbitrary
+   locations.
+
+Changes in V. 1.17
+------------------
+
+-  Fix for possible disconnect or packet received too late 
+   condition at the end of a multiplayer game.
+
+-  New 'Multi Engineer' option for multiplayer games gives 
+   Red Alert style engineer behavior to address engineer rush 
+   concerns.
+
+-  Fix for a bug that caused internal errors or reconnection 
+   errors during multiplayer games.
+
+-  Railgun force fire no longer damages buildings multiple 
+   times.
+
+-  Server list no longer displays duplicate servers.
+
+Changes in V. 1.16a.1
+---------------------
+
+- Fixed bug where harvester truce could be on in a skirmish game.
+
+- Tweak to improve unit response time at the start of the game.
+
+- If the host of an internet game is using a modified or user 
+  created map, the guests will now get a warning message instead 
+  of just a blank preview.
+
+- Fix for occasional 'Packet received too late' or 'Reconnection 
+  error' at the end of an internet game.
+
+- Fix for possible 'Packet received too late' or 'Reconnection 
+  error' when playing a LAN game right after playing an internet game.
+
+- Fix for bug which would allow mixed game versions to start a 
+  LAN game with subsequent bad behavior.
+
+- Fix for a bug where the player could get stuck in building 
+  placement mode if they lost their last construction yard.
+
+- A new "game speed" slider on Internet Game setup screen. This 
+  allows players to set the initial game speed. A game speed 
+  slider has also been added to the in-game options top level so 
+  that it is easier to access. 
+
+- An improved game setup screen layout (Random map is now a 
+  button under multiplay map).
+ 
+- The map select screen now includes a new map preview.
+
+- A new game-latency tolerance setting in the game options screen 
+  allows players to increase the tolerance of network latency on 
+  laggy connections. 
+
+- New granularity of game speed slider (now has a 45 fps setting). 
+  The slider now has the following settings in Internet multiplay. 
+  15 fps (middle) 20 fps (default) 30 fps 45 fps (new) 60 fps (max). 
+
+- Advanced code to evaluate and manipulate slow or high latency
+  connections. The game now uses the ping times from the lobby/game 
+  options screen to set up multiplayer timing values for the game. You 
+  should notice that the game runs faster at the start of the game (if 
+  you have a good connection) than it used to. 
+
+- New code to reduce bandwidth used when game speed is set to 30
+  fps (one notch above the default) or above. 
+
+- Generally reduced bandwidth in multiplayer game. Combined with the 
+  above feature, the game now consumes significantly less network 
+  bandwidth compared to earlier versions.
+
+- Out of sync due to certain turrets is fixed.
+
+- Fixed a crash in modem disconnect code after playing a game.
+
+- New "locale" setting on login dialog so that you can set your 
+  geographic location. This will eventually be used in a future new 
+  feature on our web site and in the tournament ladders. 
+
+- New server select dialog. Many players were not aware that they 
+  could change the Westwood Online server to which they were initially 
+  connected. To address this, we have inserted a "select server" dialog 
+  immediately after the login dialog. The game remembers if you change 
+  the default and will select that server as default for subsequent logins. 
+
+- New "short game" option added. This mode results in a loss when all
+  buildings are lost and leads to a more decisive result when a shorter 
+  game is desired. The MCV counts as a building for game over purposes. 
+
+- Up to 32 nicknames can be now stored on the login dialog box. 
+
+- Immediate feedback when giving a move order in multiplayer. 
+
+- Added harvester logic to allow redirection to an alternative refinery. 
+
+- Added notification to other players when game speed or latency settings
+  are changed. 
+
+- Added packet CRC check in Internet and network games to address
+  problems some users were experiencing with packet corruption with some
+  types of network card. (We have not been able to repeat this internally, 
+  but RealTek cards seem to be common culprits.) 
+
+Changes in V. 1.13
+------------------
+
+- Nod Artillery:Rate of fire decreased
+		Damage decreased, approximately 20%
+		Less effective against infantry
+
+- Nod SAM site:	Power requirements are now double.
+
+- GDI Disc throwers: Disc throwers now explode when killed 
+  and damage any nearby units.
+
+- Concrete and Firestorm walls:  These walls now build like
+  laser fences.  If you place one wall section and then 
+  place a second, a line is drawn indicating that a wall 
+  segment will be built between the two sections.  You are 
+  only charged for the cost of the end pieces of the wall, 
+  not the connecting pieces.  Also, walls can be sold but 
+  you will not receive money for sold sections.   
+  Note: If there is an obstacle such as a unit or structure 
+  that appears between the sections during placement, the 
+  two sections will not connect.
+
+- Structures cannot be built off of laser fence posts.
+
+- If you wall your MCV in and undeploy it, it no longer 
+  disappears.
+
+- Holding down 'X' (scatter) key or any other keyboard 
+  'event' generating command causes disconnect in modem or 
+  dialup internet game. 
+
+- Hunter Seeker code prioritizes targets that could affect 
+  end-game situations in multiplayer.
+
+- When harvester truce is enabled, hunter-seekers will no 
+  longer destroy harvesters.
+
+- Trainer programs can no longer cheat to unshroud the map.
+
+- Trainer programs cannot be used to disable Fog of War 
+  during a game where Fog of War has been enabled.
+
+- When the message 'Computer has been defeated' is printed 
+  when an AI loses, the message is printed in the color that 
+  matches the AI's units.
+
+- The crash caused when an engineer captures a construction 
+  yard while the building placement cursor is active is fixed.
+
+- Banshees can now fire on enemy units or force-fire on the 
+  ground within the area of effect of a stealth generator.
+
+- When ordering air units to travel to the top few spaces of 
+  a map where there is a lot of water, aircraft now land on 
+  the nearest spot of dry land rather than directly on the water.
+
+- The Firestorm defense no longer stays up indefinitely when 
+  power goes low.
+
+- The crash when destroying a vein hole monster has been fixed.  
+  This crash usually only happened after an extended period of 
+  gameplay once the vein hole monster has been killed.
+
+- The game can now run from any valid CD drive, not just the one 
+  with the first drive letter.
+
+- French and German sidebar text no longer overflows onto 
+  sidebar icons.
+
+- Ping meters are no longer partially covered by the scrollbars 
+  in the WOL lobby.
+
+- Find game dialog has been sped up. 
+
+- Occasionally when joining a full game channel an incorrect 
+  error message was displayed in your message window.  This 
+  no longer happens.
